@@ -21,6 +21,7 @@ public with sharing class BotController {
         for (Bot_Command__c command : commands) {
 			mappings.add(new HandlerMapping(command.apex_class__c, command.pattern__c));
             System.debug('Hello');
+            System.debug('My Test');
         }
         handlerMappings = mappings;
     }
